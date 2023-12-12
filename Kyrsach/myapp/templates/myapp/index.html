@@ -3,8 +3,19 @@
     <head>
         <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
     </head>
-    <body>
-        <h1>This is index templates</h1>
+    <body class="bg-sk">
+			<nav>
+				<div>
+					<div>
+						<div>
+							<div class="flex">
+									<img class="h-8 w-8" src="{% static 'myapp/images/shop.png' %}" alt="logo" />
+									<span class="text-xl">My shop</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
         <h4>
             {% for item in items %}
             <a href="{% url 'myapp:detail' item.id %}">
